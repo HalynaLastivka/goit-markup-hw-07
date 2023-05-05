@@ -29,6 +29,15 @@
                     <li class="it-list"><a href="" class="item-studio  link">Contacts</a></li>
                 </ul>
             </nav>
+            <button type="button" class="mobile-menu-open js-open-menu" aria-expanded="false"
+                aria-controls="mobile-menu">
+                <svg class="icon-hamburg" width="32" height="22">
+                    <use href="./images/icon.svg#icon-charm_menu-hamburger">
+
+                    </use>
+                </svg>
+            </button>
+
             <!-- Посилання на пошту/Посилання на телефон-->
             <address class="contact">
                 <ul class="site-contact list">
@@ -41,6 +50,7 @@
 
 
         </div>
+
     </header>
     <main>
         <!--Секція заголовку та фону-->
@@ -134,7 +144,8 @@
                 <h2 class="title">Our Team</h2>
                 <ul class="team-not list">
                     <li class="member">
-                        <img src="./images/TeamCard_1.jpg" alt="Photo Mark Guerrero" width="264">
+                        <img srcset="./images/TeamCard_1_2x.jpg 2x" src="./images/TeamCard_1.jpg"
+                            alt="Photo Mark Guerrero" width="264">
                         <div class="tl-ph">
                             <h3 class="card-title">Mark Guerrero</h3>
                             <p class="card-text">Product Designer</p>
@@ -171,7 +182,8 @@
                         </div>
                     </li>
                     <li class="member">
-                        <img src="./images/TeamCard_2.jpg" alt="Photo Tom Ford" width="264">
+                        <img srcset="./images/TeamCard_2_2x.jpg 2x" src="./images/TeamCard_2.jpg" alt="Photo Tom Ford"
+                            width="264">
                         <div class="tl-ph">
                             <h3 class="card-title">Tom Ford</h3>
                             <p class="card-text">Frontend Developer</p>
@@ -208,7 +220,8 @@
                         </div>
                     </li>
                     <li class="member">
-                        <img src="./images/TeamCard_3.jpg" alt="Photo Camila Garcia" width="264">
+                        <img srcset="./images/TeamCard_3_2x.jpg 2x" src="./images/TeamCard_3.jpg"
+                            alt="Photo Camila Garcia" width="264">
                         <div class="tl-ph">
                             <h3 class="card-title">Camila Garcia</h3>
                             <p class="card-text">Marketing</p>
@@ -245,7 +258,8 @@
                         </div>
                     </li>
                     <li class="member">
-                        <img src="./images/TeamCard_4.jpg" alt="Photo Daniel Wilson" width="264">
+                        <img srcset="./images/TeamCard_4_2x.jpg 2x" src="./images/TeamCard_4.jpg"
+                            alt="Photo Daniel Wilson" width="264">
                         <div class="tl-ph">
                             <h3 class="card-title">Daniel Wilson</h3>
                             <p class="card-text">UI Designer</p>
@@ -290,42 +304,42 @@
                 <h2 class="cust-title title">Customers</h2>
                 <ul class="customer-list list">
                     <li class="customer-item">
-                        <a href="#" class="cust-link link">
+                        <a href="" class="cust-link link">
                             <svg class="icon-cust" width="104" height="56">
                                 <use href="./images/icon.svg#icon-YaCo"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customer-item">
-                        <a href="#" class="cust-link link">
+                        <a href="" class="cust-link link">
                             <svg class="icon-cust" width="104" height="56">
                                 <use href="./images/icon.svg#icon-Company"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customer-item">
-                        <a href="#" class="cust-link link">
+                        <a href="" class="cust-link link">
                             <svg class="icon-cust" width="104" height="56">
                                 <use href="./images/icon.svg#icon-Company2"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customer-item">
-                        <a href="#" class="cust-link link">
+                        <a href="" class="cust-link link">
                             <svg class="icon-cust" width="104" height="56">
                                 <use href="./images/icon.svg#icon-Foster"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customer-item">
-                        <a href="#" class="cust-link link">
+                        <a href="" class="cust-link link">
                             <svg class="icon-cust" width="104" height="56">
                                 <use href="./images/icon.svg#icon-Brand"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="customer-item">
-                        <a href="#" class="cust-link link">
+                        <a href="" class="cust-link link">
                             <svg class="icon-cust" width="104" height="56">
                                 <use href="./images/icon.svg#icon-TagLine"></use>
                             </svg>
@@ -344,8 +358,11 @@
     <footer class="footer">
 
         <div class="footcont container">
+
             <div class="footinfo">
+
                 <a href="./index.html" class="logo link">web<span class="footer-logo">Studio</span></a>
+
                 <p class="footer-text">
                     Increase the flow of customers and sales for your business with digital marketing & growth
                     solutions.
@@ -384,10 +401,13 @@
                     </li>
                 </ul>
             </div>
-            <form class="sub-form">
+
+            <div class="wrap-foot-info-link">
+
 
                 <p class="foot-title">Subscribe</p>
-                <div class="wrapper-foot">
+                <form class="sub-form">
+                    <!-- <div class="wrapper-foot"> -->
                     <label class="foot-field">
                         <input type="email" name="user-email" placeholder="E-mail" class="foot-input">
 
@@ -398,11 +418,12 @@
                             <use href="./images/icon.svg#icon-send"></use>
                         </svg>
                     </button>
-                </div>
+                    <!-- </div> -->
 
 
 
-            </form>
+                </form>
+            </div>
 
         </div>
 
@@ -483,6 +504,76 @@
 
     </div>
 
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <div class="mobile-menu-container">
+            <button type="button" class="mobile-close-btn js-close-menu">
+                <svg class="mobile-close-btn-icon" width="8" height="8">
+                    <use href="./images/icon.svg#icon-close-modal"></use>
+                </svg>
+            </button>
+            <div class="main-mob-wrap">
+                <div class="mob-wrap-link">
+                    <ul class="mobile-nav list">
+                        <li class="mobile-list"><a href="./index.html" class="mob-item link mob-current">Studio</a>
+                        </li>
+                        <li class="mobile-list"><a href="./portfolio.html" class="mob-item link">Portfolio</a>
+                        </li>
+                        <li class="mobile-list"><a href="" class="mob-item link">Contacts</a></li>
+                    </ul>
+                </div>
+
+                <div class="mob-wrap-cont">
+                    <address class="mobile-adress">
+                        <ul class="mobile-contact list">
+                            <li class="mobile-contact-it"><a href="tel:+110001111111"
+                                    class="mobile-item-tel link">+11(000)
+                                    111-11-11</a></li>
+                            <li class="mobile-contact-it"><a href="mailto:info@devstudio.com"
+                                    class="mobile-item-mail link">info@devstudio.com</a></li>
+
+                        </ul>
+                    </address>
+
+
+                    <ul class="social-list-mob list">
+                        <li class="foot-item">
+                            <a href="#" class="social-item">
+                                <svg class="socisl-list-icon" width="24" height="24">
+                                    <use href="./images/icon.svg#icon-Inst"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="foot-item">
+                            <a href="#" class="social-item">
+                                <svg class="socisl-list-icon" width="24" height="24">
+                                    <use href="./images/icon.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="foot-item">
+                            <a href="#" class="social-item">
+                                <svg class="socisl-list-icon" width="24" height="24">
+                                    <use href="./images/icon.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="foot-item">
+                            <a href="#" class="social-item">
+                                <svg class="socisl-list-icon" width="24" height="24">
+                                    <use href="./images/icon.svg#icon-linkedin-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 
 </body>
