@@ -36,7 +36,6 @@
     margin-right: auto;
 }
 
-@media screen and () {}
 
 .header {
     border-bottom: 1px solid var(--CORNFLOWER);
@@ -540,15 +539,16 @@ button {
     margin-bottom: 0px;
     max-width: 428px;
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero.section {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                url("..//images/hero-mob@2x.jpg");
-        }
-    }
 
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero.section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("..//images/hero-mob@2x.jpg");
+    }
 }
 
 @media screen and (min-width: 429px) and (max-width: 768px) {
