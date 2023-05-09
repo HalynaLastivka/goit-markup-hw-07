@@ -373,6 +373,12 @@ button {
 
 }
 
+@media screen and (min-width:1158px) {
+    .feature {
+        padding-top: 120px;
+    }
+}
+
 @media screen and (max-width:767px) {
     .features-item:not(:last-child) {
         margin-bottom: 72px;
@@ -500,13 +506,25 @@ button {
 }
 
 
+@media screen and (min-width: 768px) and (max-width:1158px) {
+    .contact .item-contact {
+        font-size: 12px;
+    }
+}
+
+
 
 
 @media screen and (max-width: 1158px) {
     .contact .contact-it:first-child {
         margin-bottom: 12px;
-        font-size: 14px;
-        line-height: 1.17;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1158px) {
+    .contact .contact-it {
+        font-size: 12px;
     }
 }
 
@@ -1358,9 +1376,13 @@ button {
 }
 
 .modal-form-field {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
+
+.modal-form-field-com {
+    margin-bottom: 16px;
+}
 
 .modal-form-input {
     font-weight: 500;
@@ -1443,7 +1465,7 @@ button {
 .modal-form-check-desc {
     display: flex;
     gap: 8px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     cursor: pointer;
 
@@ -1452,6 +1474,7 @@ button {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--lightislate);
+
 }
 
 .modal-form-text {
